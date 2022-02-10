@@ -173,6 +173,8 @@
 iframe {
   display: flex;
   margin: 5vh auto;
+  width: 100vh;
+  height:50vh;
 }
 
 .music-mini {
@@ -236,6 +238,10 @@ iframe {
   text-decoration: none;
 }
 
+.footer-col{
+  margin-top: 3vh;
+}
+
 .footer-col ul li {
   color: azure;
   list-style: none;
@@ -277,7 +283,9 @@ iframe {
   position: relative;
   top: 10%;
 } */
-
+.stream-now-text{
+  display: none;
+}
 
 
 @media (min-width: 700px){
@@ -300,8 +308,159 @@ iframe {
     width: 30vw;
     cursor: pointer;
   }
+  .row {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .col-1 {
+    flex-basis: 100%;
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .col-1 h2 {
+    font-size: 13vw;
+    color: rgb(255, 243, 231);
+    text-align: center;
+  }
+  
+  .col-1 h2 span:hover {
+    color: rgb(175, 0, 0);
+  }
+
+  .col-2 {
+    margin-top: 10px;
+    position: relative;
+    flex-basis: 100%;
+    display: block;
+    align-items: center;
+    margin-left: 30px;
+  }
+  
+  .col-2 .CD {
+    width: 96%;
+    align-items: center;
+  }
+
+  .normal-button {
+    padding: 10px 20px 10px 20px;
+    margin-top: 0vh;
+    margin-bottom: 50px;
+    stroke: white;
+    border-style: solid;
+    cursor: pointer;
+    font-size: 5vw;
+    color: blanchedalmond;
+
+  }
+  .normal-button {
+    display: flex;
+    flex: auto;
+  }
+  #stream-now{
+    display: none;
+  }
+  iframe {
+    display: flex;
+    margin: 5vh auto;
+    width: 80vw;
+    height:40vh;
+  }
+  .stream-now-text{
+    font-size: 30px;
+    margin-top: 0%;
+    display: block;
+  }
+
+  .normal-button:hover {
+    background-color: blanchedalmond;
+    stroke: blanchedalmond;
+    color: black;
+  }
+  
+  .normal-button a {
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    color: blanchedalmond;
+  }
 
   .music-mini {
-    margin: 10vh 3vw 10vh 3vw;
+    justify-items: normal;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
   }
+  
+  .product-description h2 {
+    font-size: 15vw;
+    color: rgb(255, 243, 231);
+  }
+
+  .product-description {
+    flex-basis: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 6vh;
+  }
+  
+  
+  .product-description h3 {
+    margin-top: 3vh;
+    color: white;
+    font-size: 2.5vh;
+    font-weight: 200;
+    display: flex;
+  }
+  
+  .CD-img {
+    margin-top: 10px;
+    position: relative;
+    flex-basis: 100%;
+    align-items: center;
+  }
+  
+  .CD-img .CD {
+    width: 100%;
+  }
+
+  .buy-now {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #MRP {
+    display: none;
+  }
+
+  .footer-col ul li {
+    color: azure;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .footer-col ul li a {
+    text-decoration: none;
+    color: rgb(141, 129, 110);
+  }
+
+  .footer-col h3{
+    text-align: center;
+  }
+  .footer p{
+    text-align: center;
+    margin-top: 10vh;
+  }
+
+  .buy-now-btn{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
 }
+
+
+
+

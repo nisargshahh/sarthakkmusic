@@ -13,6 +13,7 @@
 .music-btn{
     justify-content: space-between;
     display: flex;
+    flex-wrap: wrap;
     margin: 10vh 10vw 10vh 10vw;
 }
     
