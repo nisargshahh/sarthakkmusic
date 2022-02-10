@@ -1,0 +1,18 @@
+@import url("../css/home.css");
+
+.music-platforms h2{
+    font-size: 6vh;
+    color: rgb(255, 243, 231);
+    text-align: center;
+}
+  
+.music-platforms h2 span:hover{
+    color: rgb(175, 0, 0);
+}
+
+.music-btn{
+    justify-content: space-between;
+    display: flex;
+    margin: 10vh 10vw 10vh 10vw;
+}
+    

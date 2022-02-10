@@ -1,0 +1,94 @@
+@import url("../css/home.css");
+
+.your-cart {
+  margin: 80px auto;
+}
+
+table {
+  margin: auto;
+  width: 85%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.product-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th {
+  font-size: 24px;
+  text-align: left;
+  padding: 7px 7px 7px 7px;
+  color: antiquewhite;
+  background-color: #000;
+}
+
+#item{
+  padding: 7px 7px 7px 15px;
+}
+
+.product-info img {
+  width: 80px;
+  height: 100px;
+  padding: 5px 5px 5px 10px;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+  border: solid;
+  border-color: antiquewhite;
+  color: antiquewhite;
+  cursor: pointer;
+}
+
+td span{
+  color: rgb(189, 112, 18);
+  font-size: 12px;
+  font-style: normal;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+td p{
+  font-size: 20px;
+  color: whitesmoke;
+}
+td small{
+  font-size: 17px;
+  color: antiquewhite;
+}
+
+td h3{
+  color: whitesmoke;
+  display: inline;
+}
+
+.prod-desc{
+  margin-left: 10px;
+}
+
+
+.total-price table{
+  border-top: 2px solid rgba(255, 218, 185, 0.74);
+}
+
+td:last-child{
+  text-align: right;
+}
+
+th:last-child{
+  text-align: right;
+}
+
+@media(max-width: 700px){
+  .product-info p{
+    display: none;
+  }
+}
