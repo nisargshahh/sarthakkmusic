@@ -45,40 +45,6 @@ function quantityChanged(event){
   updateCartTotal();
 }
 
-function addItemToCartClicked(event){
-  var button = event.target
-  var shopItem = button.parentElement.parentElement;
-  var title = shopItem.getElementsByClassName('product-name')[0].innerHTML
-  var price = findPrice()
-  var imageSrc = shopItem.getElementsByClassName('product-image')[0].src
-  function findPrice() {
-    var str = shopItem.getElementsByClassName('price')[0].innerHTML;
-    var matches = str.match(/(\d+)/);
-    return matches[0];
-  }  
-  console.log(title,price,imageSrc)
-  addItemToCart(title,price,imageSrc)
-  cartNumberIncreased();
-}
-
-function cartNumberIncreased(){
-  var cartNumber = findNumber()
-  function findNumber() {
-    var cartNo = document.getElementsByClassName("cart-number")[0].innerHTML;
-    var matches = cartNo.match(/(\d+)/);
-    return matches[0];
-  }
-  cartNumber++;
-  document.getElementsByClassName("cart-number")[0].innerHTML = cartNumber;
-
-}
-
-
-
-function addItemToCart(title,price,imageSrc){
-  var cartRow = document.createElement('tr')
-  cartRow.innerText = title
-}
 
 function updateCartTotal() {
   var numberOfRows = CountRows();
