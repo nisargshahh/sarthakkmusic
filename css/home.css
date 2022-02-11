@@ -108,7 +108,7 @@
 }
 
 .normal-button:hover {
-  background-color: blanchedalmond;
+  background-color: black;
   stroke: blanchedalmond;
   color: black;
 }
@@ -284,7 +284,9 @@ iframe {
   top: 10%;
 } */
 .stream-now-text{
-  display: none;
+  display: block;
+  font-size: 42px;
+  margin-top: 0%;
 }
 
 
@@ -359,9 +361,7 @@ iframe {
     display: flex;
     flex: auto;
   }
-  #stream-now{
-    display: none;
-  }
+
   iframe {
     display: flex;
     margin: 5vh auto;
@@ -375,7 +375,7 @@ iframe {
   }
 
   .normal-button:hover {
-    background-color: blanchedalmond;
+    background-color: black;
     stroke: blanchedalmond;
     color: black;
   }
@@ -457,6 +457,11 @@ iframe {
   .buy-now-btn{
     display: flex;
     flex-wrap: wrap;
+    text-decoration: none;
+  }
+
+  .buy-now-btn button{
+    text-decoration: none;
   }
   
 }
