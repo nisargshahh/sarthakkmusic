@@ -1,3 +1,23 @@
+const jsonbruh = [{
+  id: 456,
+  name: "shirt",
+  image: "link here",
+  price: 69420
+},
+{
+  id:786,
+  name: "tshirt",
+  image: "link here",
+  price: 6920
+},
+{
+  id:747,
+  name: "shirt",
+  image: "link here",
+  price: 6420
+}]
+
+
 if (document.readyState == 'loading') {
   document.addEventListener('DOMContentLoaded', ready)
 } else {
