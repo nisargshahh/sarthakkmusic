@@ -1,11 +1,11 @@
-var menu = document.getElementById("menu-btn");
+let menu = document.getElementById("menu-btn");
 
 function changeNav() {
   menu.classList.toggle("change");
 }
 
 menu.onclick = function mobNav() {
-  var mobnav = document.getElementById("mob-nav");
+  let mobnav = document.getElementById("mob-nav");
   if (mobnav.style.display === "block") {
     mobnav.style.display = "none";
     changeNav();
@@ -14,4 +14,3 @@ menu.onclick = function mobNav() {
     changeNav();
   }
 };
-
