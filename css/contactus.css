@@ -1,58 +1,55 @@
-@import url("../css/home.css");
+@import url('../css/home.css');
 
 .contact-us-text {
-  text-align: center;
-  margin: 10px;
-  font-size: 4vh;
-  color: wheat;
+	text-align: center;
+	margin: 10px;
+	font-size: 4vh;
+	color: wheat;
 }
 
 .contact-us-text span:hover {
-  color: rgb(175, 0, 0);
+	color: rgb(175, 0, 0);
 }
 
 .center {
-  margin: auto;
-  width: fit-content;
+	margin: auto;
+	width: fit-content;
 }
 
 .form-div {
-  border: 2px;
-  border-color: whitesmoke;
-  border-style: solid;
-  width: fit-content;
-  padding: 20px;
-  position: relative;
+	border: 2px;
+	border-color: whitesmoke;
+	border-style: solid;
+	width: fit-content;
+	padding: 20px;
+	position: relative;
 }
 
-button{
-  margin-top: 20px;
-  position: relative;
-  left: 37%;
-
-
+button {
+	margin-top: 20px;
+	position: relative;
+	left: 37%;
 }
-
 
 label {
-  margin: 1vh;
-  color: antiquewhite;
-  display: flex;
-  align-items: center;
+	margin: 1vh;
+	color: antiquewhite;
+	display: flex;
+	align-items: center;
 }
 
 .input {
-  margin: 10px auto 10px 10px;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 10px 5px 10px;
-  stroke: white;
-  border-style: solid;
-  font-size: 1.4vw;
-  color: blanchedalmond;
+	margin: 10px auto 10px 10px;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 10px 5px 10px;
+	stroke: white;
+	border-style: solid;
+	font-size: 1.4vw;
+	color: blanchedalmond;
 }
 
 td {
-  color: bisque;
-  font-size: 18px;
+	color: bisque;
+	font-size: 18px;
 }

@@ -1,29 +1,28 @@
-@import url("../css/home.css");
+@import url('../css/home.css');
 
-.about-me{
-    margin-top: 10vh;
-  }
-  
-  .about-me h1{
-    align-items: center;
-    text-align: center;
-    font-size: 5vh;
-    color: antiquewhite;
-  }
-  
-  .about-me span:hover{
-    color: rgb(207, 5, 5);
-  
-  }
-  .about-me p{
-    color: white;
-    margin: 5vh 10vw 5vh 10vw;
-    align-items: center;
-    text-align: center;
-  }
+.about-me {
+	margin-top: 10vh;
+}
 
-  .about-me-img{
-    width: 60%;
-    display: flex;
-    margin: 3vh auto;
-  }
+.about-me h1 {
+	align-items: center;
+	text-align: center;
+	font-size: 5vh;
+	color: antiquewhite;
+}
+
+.about-me span:hover {
+	color: rgb(207, 5, 5);
+}
+.about-me p {
+	color: white;
+	margin: 5vh 10vw 5vh 10vw;
+	align-items: center;
+	text-align: center;
+}
+
+.about-me-img {
+	width: 60%;
+	display: flex;
+	margin: 3vh auto;
+}
