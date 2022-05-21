@@ -1,24 +1,3 @@
-const jsonbruh = [
-	{
-		id: 456,
-		name: 'shirt',
-		image: 'link here',
-		price: 69420
-	},
-	{
-		id: 786,
-		name: 'tshirt',
-		image: 'link here',
-		price: 6920
-	},
-	{
-		id: 747,
-		name: 'shirt',
-		image: 'link here',
-		price: 6420
-	}
-]
-
 if (document.readyState == 'loading') {
 	document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -47,6 +26,7 @@ function ready() {
 	document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
+//PURCHASE BUTTON CLICKED.
 function purchaseClicked() {
 	alert('Thank you for your purchase')
 	var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -56,12 +36,14 @@ function purchaseClicked() {
 	updateCartTotal()
 }
 
+//CART ITEM REMOVED.
 function removeCartItem(event) {
 	var buttonClicked = event.target
 	buttonClicked.parentElement.parentElement.remove()
 	updateCartTotal()
 }
 
+//QUANTITY INPUT CHANGED.
 function quantityChanged(event) {
 	var input = event.target
 	if (isNaN(input.value) || input.value <= 0) {
@@ -109,6 +91,7 @@ function addItemToCart(title, price, imageSrc) {
 		.addEventListener('change', quantityChanged)
 }
 
+
 function updateCartTotal() {
 	var cartItemContainer = document.getElementsByClassName('cart-items')[0]
 	var cartRows = cartItemContainer.getElementsByClassName('cart-row')
@@ -123,4 +106,11 @@ function updateCartTotal() {
 	}
 	total = Math.round(total * 100) / 100
 	document.getElementsByClassName('cart-total-price')[0].innerText = '₹' + total
+}
+
+function hover(element) {
+	element.setAttribute('src', 'http://dummyimage.com/100x100/eb00eb/fff');
+}
+function unhover(element) {
+	element.setAttribute('src', 'http://dummyimage.com/100x100/000/fff');
 }
