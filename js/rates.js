@@ -28,30 +28,18 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig)
 const db = getDatabase();
 const firebaseref = ref(db);
-get(child(firebaseref , "Items/1")).then((snapshot)=>{
-    if(snapshot.exists()){
-        var price_id = snapshot.val().id;
-        var price1 = snapshot.val().price;
-        console.log(price_id,price1);
-        document.getElementById("BMVI1999").innerHTML = price1;
-    }
-    else{
-        alert("no data found");
-    }
-    
-});
-get(child(firebaseref , "Items/2")).then((snapshot)=>{
-    if(snapshot.exists()){
-        var price_id2 = snapshot.val().id;
-        var price2 = snapshot.val().price;
-        console.log(price_id2,price2);
-        document.getElementById("BMCD0999").innerHTML = price2;
-    }
-    else{
-        alert("no data found");
-    }
-    
-});
+var id_list=["BMCD0999","BMVI1999","BMMA0199","FAMA0199","KGTS0999","WTMF0999","KMDT0999","PTTS0999","BMSS1299","HIRO0999","HIRT0999"];
+for(let i =1 ; i<=11;i++){
+    get(child(firebaseref , "Items/"+i)).then((snapshot)=>{
+        if(snapshot.exists()){
+            document.getElementById(id_list[i-1]).innerHTML = snapshot.val().price;
+        }
+        else{
+            alert("no data found");
+        }
+        
+    });
+}
 
 
 
