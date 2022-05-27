@@ -1,14 +1,63 @@
 {
   "Items": [
     null,
+    
     {
 	    "id" : 1,
-      "price": "1999"
+      "name": "Bombay Mafia CD",
+	    "price":"₹999"
     },
+    
     {
 	    "id" : 2,
-	    "price":"999"
+      "name": "Bombay Mafia Vinyl",
+      "price": "₹1999"
+    },
+    {
+	    "id" : 3,
+      "name": "Bombay Mafia Mask",
+      "price": "₹199"
+    },
+    {
+	    "id" : 4,
+      "name": "Fakeer Mask",
+      "price": "₹199"
+    },
+    {
+	    "id" : 5,
+      "name": "Kaali Gaddi T-shirt",
+      "price": "₹999"
+    },
+    {
+	    "id" : 6,
+      "name": "We the mafia T-shirt",
+      "price": "₹999"
+    },
+    {
+	    "id" : 7,
+      "name": "KMD T-shirt",
+      "price": "₹999"
+    },
+    {
+	    "id" : 8,
+      "name": "PUTTS T-shirt",
+      "price": "₹999"
+    },
+    {
+	    "id" : 9,
+      "name": "Bombay Mafia sweatshirt",
+      "price": "₹999"
+    },
+    {
+	    "id" : 10,
+      "name": "HIRO T-shirt",
+      "price": "₹999"
+    },
+    {
+	    "id" : 11,
+      "name": "HIRT T-shirt",
+      "price": "₹999"
     }
-    
+
   ]
 }

@@ -7,6 +7,11 @@
 	background-color: black;
 }
 
+a{
+	font-style: normal;
+	text-decoration: none;
+	color: #ffffff;
+}
 .container {
 	width: 100%;
 	min-height: 100vh;
@@ -107,13 +112,23 @@
 	color: blanchedalmond;
 }
 
-.normal-button:hover {
-	background-color: black;
-	stroke: blanchedalmond;
-	color: black;
-}
 
 .normal-button a {
+	text-decoration: none;
+	background-color: transparent;
+	color: blanchedalmond;
+}
+
+#ahref-btn{
+	padding: 0px;
+	margin-top: 7vh;
+	border-style: none;
+	cursor: pointer;
+	font-size: 1.4vw;
+	color: blanchedalmond;
+}
+
+#ahref-btn a {
 	text-decoration: none;
 	background-color: transparent;
 	color: blanchedalmond;
@@ -221,13 +236,24 @@ iframe {
 }
 
 .CD-img .CD {
-	width: 100%;
+	width: 80%;
+	margin-top: 50px;
+	border-radius: 5%;
 }
 
+
+.CD-img .CD:hover{
+	width: 80%;
+	margin-top: 10px;
+	border-radius: 5%;
+	transition: 0.3s;
+}
+
+
 #MRP {
-	margin-top: 5vh;
-	font-weight: 700;
-	font-size: 6vh;
+	margin-top: 2vh;
+	font-weight: 500;
+	font-size: 4vh;
 	color: blanchedalmond;
 }
 
@@ -287,6 +313,10 @@ iframe {
 	display: block;
 	font-size: 42px;
 	margin-top: 0%;
+}
+
+h4{
+	color: bisque;
 }
 
 @media (min-width: 700px) {
@@ -353,6 +383,25 @@ iframe {
 		font-size: 5vw;
 		color: blanchedalmond;
 	}
+	
+	#ahref-btn{
+		padding: 10px 20px 10px 20px;
+		margin-top: 7vh;
+		margin-bottom: 50px;
+		stroke: white;
+		border-style: solid;
+		cursor: pointer;
+		font-size: 5vw;
+		color: blanchedalmond;
+	}
+	
+	#ahref-btn a {
+		text-align: center;
+		text-decoration: none;
+		background-color: transparent;
+		color: blanchedalmond;
+	}
+
 	.normal-button {
 		display: flex;
 		flex: auto;
@@ -368,12 +417,6 @@ iframe {
 		font-size: 30px;
 		margin-top: 0%;
 		display: block;
-	}
-
-	.normal-button:hover {
-		background-color: black;
-		stroke: blanchedalmond;
-		color: black;
 	}
 
 	.normal-button a {
