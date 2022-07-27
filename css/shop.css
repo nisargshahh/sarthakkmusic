@@ -1,0 +1,173 @@
+@import url('../css/home.css');
+
+body {
+    background-color: #000;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: -5px;
+}
+
+.btn-container {
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.btn-container button {
+    margin-top: 10px;
+    ;
+}
+
+.shop-heading {
+    color: blanchedalmond;
+}
+
+.heading {
+    text-align: center;
+    font-style: bold;
+}
+
+.button {
+    margin: 10px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    background-color: #000
+}
+
+#output {
+    clear: both;
+}
+
+#checkoutdiv {
+    display: none;
+}
+
+.card {
+    width: 100%;
+    max-height: 600px;
+    border: 1px solid rgb(152, 141, 123);
+    border-radius: 0%;
+    background-color: #000;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+    color: rgb(109, 103, 96);
+}
+
+.text-muted {
+    margin-top: 5px;
+    color: beige !important;
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+    font-size: 30px;
+    color: rgb(183, 183, 183);
+}
+
+.card-block {
+    padding: 1.25rem;
+}
+
+.productItem btn {
+    background-color: transparent;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid blanchedalmond;
+    border-radius: 0;
+    color: blanchedalmond;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btns-btm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-success {
+    width: 200px;
+}
+
+#btn-primary-checkout {
+    width: 200px;
+}
+
+.total {
+    color: rgb(195, 187, 176);
+}
+
+.items-total {
+    color: rgb(195, 187, 176);
+}
+
+.table td {
+    color: rgb(207, 196, 182);
+}
+
+.table th {
+    color: rgb(195, 187, 176)
+}
+
+.floating-total {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+    width: 5%;
+}
+
+.btn-container-float {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    size: 10px;
+}
+
+.btn-container-float button {
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .btn-container-float {
+        display: none;
+    }
+
+    .btn-container {
+        display: flex;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    body {
+        background-color: #000;
+        margin: 0;
+    }
+}

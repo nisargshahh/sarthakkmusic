@@ -1,0 +1,46 @@
+@import url('../css/home.css');
+
+input[type="number"] {
+    width: 20%;
+    color: antiquewhite;
+    border: 1px antiquewhite;
+}
+
+.shop-back-link{
+    color: antiquewhite;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.shop-back-link a{
+    text-decoration: none;
+    color: antiquewhite
+}
+.shop-back-link a:hover{
+    color: rgb(4, 234, 0);
+}
+
+.table td{
+    color: rgb(207, 196, 182);
+    border: 0;
+}
+
+.table th{
+    color: rgb(195, 187, 176);
+    border: 0;
+    background-color: transparent;
+}
+
+
+h1{
+    color: antiquewhite;
+}
+
+
+@media screen and (max-width: 600px) {
+    input[type="number"] {
+        width: 100%;
+        padding: 0;
+        padding-left: 10%;
+    }
+}
